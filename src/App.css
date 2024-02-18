@@ -1,38 +1,77 @@
 .App {
   text-align: center;
+  font-family: cursive;
+}
+.subject-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  background: linear-gradient(to right, #25ada4 30%, #452fc2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.subject-form-container h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.subject-form-container form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 19px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.subject-form-container form input[type="text"],
+.subject-form-container form input[type="number"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.subject-form-container form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #222223;
+  color: #eeefe1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subject-form-container form button[type="submit"]:hover {
+  background-color: rgb(53, 54, 55);
+}
+
+.subject-form-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.subject-form-container ul li {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #2e2e2e;
+}
+
+.subject-form-container ul li strong {
+  font-weight: bolder;
+  color: #0d0d0d;
+}
+
+button[type="button"] {
+  padding: 10px 20px;
+  background-color: #222223;
+  color: #eeefe1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button[type="button"]:hover {
+  background-color: rgb(53, 54, 55);
+}
+.delete {
+  margin: 5px;
 }
