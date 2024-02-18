@@ -1,5 +1,4 @@
 import "./App.css";
-import GradeCalculator from "./components/GradeCalculator";
 import SubjectForm from "./components/SubjectForm";
 
 function App() {
